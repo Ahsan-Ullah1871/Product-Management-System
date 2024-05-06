@@ -25,7 +25,7 @@ const AddProductForm = () => {
 			})
 		);
 		setProductForm(null);
-		document.getElementById("lws-addProductForm").reset();
+		document.getElementById("techlab-addProductForm").reset();
 	};
 
 	return (
@@ -35,7 +35,7 @@ const AddProductForm = () => {
 				<h4 class="formTitle">Add New Product</h4>
 				<form
 					class="space-y-4 text-[#534F4F]"
-					id="lws-addProductForm"
+					id="techlab-addProductForm"
 					onSubmit={onSubmitHandler}
 				>
 					{/* product name */}
@@ -44,7 +44,7 @@ const AddProductForm = () => {
 						<input
 							value={product_form?.title}
 							class="addProductInput"
-							id="lws-inputName"
+							id="techlab-inputName"
 							type="text"
 							id="name"
 							onChange={(e) =>
@@ -62,7 +62,7 @@ const AddProductForm = () => {
 						<input
 							value={product_form?.category}
 							class="addProductInput"
-							id="lws-inputCategory"
+							id="techlab-inputCategory"
 							type="text"
 							id="category"
 							onChange={(e) =>
@@ -80,7 +80,7 @@ const AddProductForm = () => {
 						<input
 							value={product_form?.image_url}
 							class="addProductInput"
-							id="lws-inputImage"
+							id="techlab-inputImage"
 							type="text"
 							id="image"
 							onChange={(e) =>
@@ -105,7 +105,7 @@ const AddProductForm = () => {
 								}
 								class="addProductInput"
 								type="number"
-								id="lws-inputPrice"
+								id="techlab-inputPrice"
 								onChange={(e) =>
 									onChangeValue(
 										"price",
@@ -127,7 +127,7 @@ const AddProductForm = () => {
 								}
 								class="addProductInput"
 								type="number"
-								id="lws-inputQuantity"
+								id="techlab-inputQuantity"
 								required
 								onChange={(e) =>
 									onChangeValue(
@@ -142,7 +142,7 @@ const AddProductForm = () => {
 					{/* submit button */}
 					<button
 						type="submit"
-						id="lws-inputSubmit"
+						id="techlab-inputSubmit"
 						class="submit"
 					>
 						Add Product

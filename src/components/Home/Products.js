@@ -30,7 +30,10 @@ const Products = () => {
 
 	console.log(cart_list);
 	return (
-		<div class="productContainer" id="lws-productContainer">
+		<div
+			class="productContainer"
+			id="techlab-productContainer"
+		>
 			{products_list.length == 0 && (
 				<p className=" ">
 					No products found. But you can add new produt
@@ -40,23 +43,23 @@ const Products = () => {
 			{/* product item */}
 			{products_list?.map((product) => {
 				return (
-					<div class="lws-productCard">
+					<div class="techlab-productCard">
 						<img
-							class="lws-productImage"
+							class="techlab-productImage"
 							src={product.image_url}
 							alt="product"
 						/>
 						<div class="p-4 space-y-2">
-							<h4 class="lws-productName">
+							<h4 class="techlab-productName">
 								{product.title}
 							</h4>
-							<p class="lws-productCategory">
+							<p class="techlab-productCategory">
 								{product.category}
 							</p>
 							<div class="flex items-center justify-between pb-2">
 								<p class="productPrice">
 									BDT{" "}
-									<span class="lws-price">
+									<span class="techlab-price">
 										{
 											product.price
 										}
@@ -64,7 +67,7 @@ const Products = () => {
 								</p>
 								<p class="productQuantity">
 									QTY{" "}
-									<span class="lws-quantity">
+									<span class="techlab-quantity">
 										{
 											product.qty
 										}
@@ -72,7 +75,7 @@ const Products = () => {
 								</p>
 							</div>
 							<button
-								class="lws-btnAddToCart"
+								class="techlab-btnAddToCart"
 								onClick={() =>
 									cartHandler(
 										product

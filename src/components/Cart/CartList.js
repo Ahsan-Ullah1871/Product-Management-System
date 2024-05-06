@@ -40,25 +40,25 @@ const CartList = () => {
 						<div class="flex items-center col-span-6 space-x-6">
 							{/* cart image */}
 							<img
-								class="lws-cartImage"
+								class="techlab-cartImage"
 								src={cart.product_image}
 								alt="product"
 							/>
 							{/* cart item info */}
 							<div class="space-y-2">
-								<h4 class="lws-cartName">
+								<h4 class="techlab-cartName">
 									{
 										cart.product_title
 									}
 								</h4>
-								<p class="lws-cartCategory">
+								<p class="techlab-cartCategory">
 									{
 										cart.product_category
 									}
 								</p>
 								<p>
 									BDT{" "}
-									<span class="lws-cartPrice">
+									<span class="techlab-cartPrice">
 										{
 											cart.product_price
 										}
@@ -70,7 +70,7 @@ const CartList = () => {
 							{/* amount buttons */}
 							<div class="flex items-center space-x-4">
 								<button
-									class="lws-incrementQuantity"
+									class="techlab-incrementQuantity"
 									onClick={() =>
 										updateCart(
 											cart,
@@ -80,11 +80,11 @@ const CartList = () => {
 								>
 									<i class="text-lg fa-solid fa-plus"></i>
 								</button>
-								<span class="lws-cartQuantity">
+								<span class="techlab-cartQuantity">
 									{cart.qty}
 								</span>
 								<button
-									class="lws-decrementQuantity"
+									class="techlab-decrementQuantity"
 									onClick={() =>
 										updateCart(
 											cart,
@@ -98,7 +98,7 @@ const CartList = () => {
 							{/* price */}
 							<p class="text-lg font-bold">
 								BDT{" "}
-								<span class="lws-calculatedPrice">
+								<span class="techlab-calculatedPrice">
 									{
 										cart.total_price
 									}
@@ -112,7 +112,7 @@ const CartList = () => {
 								deleteItem(cart)
 							}
 						>
-							<button class="lws-removeFromCart">
+							<button class="techlab-removeFromCart">
 								<i class="text-lg text-red-400 fa-solid fa-trash"></i>
 							</button>
 						</div>

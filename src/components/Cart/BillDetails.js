@@ -11,8 +11,6 @@ const BillDetails = () => {
 		return sum;
 	};
 
- 
-
 	return (
 		<div>
 			<div class="billDetailsCard">
@@ -25,7 +23,7 @@ const BillDetails = () => {
 						<p>Sub Total</p>
 						<p>
 							BDT{" "}
-							<span class="lws-subtotal">
+							<span class="techlab-subtotal">
 								{AllCartListTotalPrice(
 									cartList
 								)}
@@ -37,7 +35,7 @@ const BillDetails = () => {
 						<p>Discount</p>
 						<p>
 							BDT{" "}
-							<span class="lws-discount">
+							<span class="techlab-discount">
 								0
 							</span>
 						</p>
@@ -54,7 +52,7 @@ const BillDetails = () => {
 						<p class="font-bold">TOTAL</p>
 						<p class="font-bold">
 							BDT{" "}
-							<span class="lws-total">
+							<span class="techlab-total">
 								{AllCartListTotalPrice(
 									cartList
 								)}

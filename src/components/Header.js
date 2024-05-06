@@ -21,8 +21,8 @@ const Header = ({ setPageState }) => {
 					}
 				>
 					<img
-						src="/images/logo.png"
-						alt="LWS"
+						src="/images/techlab.png"
+						alt="TechLab"
 						class="max-w-[140px]"
 					/>
 				</a>
@@ -31,7 +31,7 @@ const Header = ({ setPageState }) => {
 					<a
 						href="#"
 						class="navHome"
-						id="lws-home"
+						id="techlab-home"
 						onClick={() =>
 							setPageState({
 								home_page: true,
@@ -45,7 +45,7 @@ const Header = ({ setPageState }) => {
 					<a
 						href="#"
 						class="navCart"
-						id="lws-cart"
+						id="techlab-cart"
 						onClick={() =>
 							setPageState({
 								home_page: false,
@@ -54,7 +54,7 @@ const Header = ({ setPageState }) => {
 						}
 					>
 						<i class="text-xl fa-sharp fa-solid fa-bag-shopping"></i>
-						<span id="lws-totalCart">
+						<span id="techlab-totalCart">
 							{AllCartListTotalPrice(
 								cartList
 							)}
