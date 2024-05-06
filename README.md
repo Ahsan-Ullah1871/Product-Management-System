@@ -53,5 +53,5 @@ The project structure is organized as follows:
 ## Live Demo
 
 Explore the live demo of the project
-[here](https://cart-assignment-by-ahsan.netlify.app/).
+[here](https://product-management-system-taupe.vercel.app/).
 
